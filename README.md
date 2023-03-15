@@ -1,4 +1,4 @@
-# copy-translatior
+# copy-translator
 linux划词翻译软件,使用系统通知发送翻译结果
 灵感来源:[CopTrans](https://github.com/maxuewei2/CopyTrans/)
 
