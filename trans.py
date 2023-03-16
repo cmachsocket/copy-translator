@@ -1,11 +1,10 @@
-import os
+fr="auto"
+to="auto"
+from plyer import notification
 import pyperclip
 import json, requests
-f=open("trans_config.ini")
 def trans(query):
     url = 'http://fanyi.youdao.com/translate'
-    fr=f.readline()
-    to=f.readline()
     data = {
         "i": query,  # 待翻译的字符串
         "from": fr,
@@ -17,4 +16,4 @@ def trans(query):
 
 txt = pyperclip.paste()
 a=trans(txt)
-os.popen("notify-send "+"翻译结果 "+a)
+notification.notify(title = '翻译结果',message = a,)
